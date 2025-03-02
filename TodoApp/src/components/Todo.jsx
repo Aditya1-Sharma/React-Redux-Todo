@@ -34,11 +34,6 @@ function Todo() {
                 />
               </svg>
             </button>
-            <button
-              onClick={() => seteditText(!editText)}
-              className="text-white">
-              Edit
-            </button>
           </li>
         ))}
       </ul>

@@ -38,6 +38,7 @@ function EditTodo() {
             {editIndex === index ? (
               <input
                 type="text"
+                placeholder="Enter a Todo..."
                 value={editText}
                 onChange={(e) => setEditText(e.target.value)}
                 onBlur={handleSaveEdit}
@@ -45,10 +46,10 @@ function EditTodo() {
               />
             ) : (
               // <span onClick={() => handleEdit(index, todo)}>{todo.text}</span>
-
-              <button onClick={() => handleEdit(index, todo)}>
-                {todo.text}
-              </button>
+              null
+              // <button onClick={() => handleEdit(index, todo)}>
+              //   {todo.text}
+              // </button>
             )}
           </li>
         ))}
